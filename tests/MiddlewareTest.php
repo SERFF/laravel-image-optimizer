@@ -25,7 +25,7 @@ class MiddlewareTest extends TestCase
         $this->assertDecreasedFileSize($uploadPath, $originalImagePath);
     }
 
-    protected function getUploadFile(string $path): UploadedFile
+    protected function getUploadFile($path)
     {
         return new UploadedFile(
             $path,

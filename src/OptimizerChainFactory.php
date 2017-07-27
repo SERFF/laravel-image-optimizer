@@ -18,7 +18,7 @@ class OptimizerChainFactory
             ->setOptimizers(static::getOptimizers($config));
     }
 
-    protected static function getLogger($config): LoggerInterface
+    protected static function getLogger($config)
     {
         $configuredLogger = $config['log_optimizer_activity'];
 
@@ -40,7 +40,7 @@ class OptimizerChainFactory
     protected static function getOptimizers(array $config)
     {
         return collect($config['optimizers'])
-            ->mapWithKeys(function (array $options, string $optimizerClass) {
+            ->mapWithKeys(function (array $options, $optimizerClass) {
                 if (! is_a($optimizerClass, Optimizer::class, true)) {
                     throw InvalidConfiguration::notAnOptimizer($optimizerClass);
                 }

@@ -8,14 +8,14 @@ use Spatie\ImageOptimizer\Optimizer;
 
 class InvalidConfiguration extends Exception
 {
-    public static function notAnOptimizer(string $class)
+    public static function notAnOptimizer($class)
     {
         $optimizerInterface = Optimizer::class;
 
         return new static("Configured optimizer `{$class}` does not implement `{$optimizerInterface}`.");
     }
 
-    public static function notAnLogger(string $class)
+    public static function notAnLogger($class)
     {
         $loggerInterface = LoggerInterface::class;
 

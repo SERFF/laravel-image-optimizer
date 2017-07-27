@@ -15,9 +15,17 @@
             "role": "Developer"
         }
     ],
+
+    "repositories":
+    [
+      {
+        "type": "vcs",
+        "url": "https://github.com/SERFF/image-optimizer"
+      }
+    ],
     "require": {
         "php": "^7.0",
-        "spatie/image-optimizer": "^1.0.4"
+        "spatie/image-optimizer": "dev-master"
     },
     "require-dev": {
         "orchestra/testbench": "^3.4",
