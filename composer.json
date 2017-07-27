@@ -1,57 +1,59 @@
 {
-  "name": "spatie/laravel-image-optimizer",
-  "description": "Optimize images in your Laravel app",
-  "keywords": [
-    "spatie",
-    "laravel-image-optimizer"
-  ],
-  "homepage": "https://github.com/spatie/laravel-image-optimizer",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Freek Van der Herten",
-      "email": "freek@spatie.be",
-      "homepage": "https://spatie.be",
-      "role": "Developer"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/SERFF/image-optimizer"
-    }
-  ],
-  "require": {
-    "spatie/image-optimizer": "dev-master"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^3.4",
-    "phpunit/phpunit": "^5.7"
-  },
-  "autoload": {
-    "psr-4": {
-      "Spatie\\LaravelImageOptimizer\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Spatie\\LaravelImageOptimizer\\Test\\": "tests"
-    }
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit"
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerServiceProvider"
-      ],
-      "aliases": {
-        "LaravelImageOptimizer": "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerFacade"
+    "name": "spatie/laravel-image-optimizer",
+    "description": "Optimize images in your Laravel app",
+    "keywords": [
+        "spatie",
+        "laravel-image-optimizer"
+    ],
+    "homepage": "https://github.com/spatie/laravel-image-optimizer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+
+    "repositories":
+    [
+      {
+        "type": "vcs",
+        "url": "https://github.com/SERFF/image-optimizer"
       }
+    ],
+    "require": {
+        "spatie/image-optimizer": "dev-master"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.4",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\LaravelImageOptimizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\LaravelImageOptimizer\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelImageOptimizer": "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerFacade"
+            }
+        }
     }
-  }
 }
